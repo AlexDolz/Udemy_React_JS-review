@@ -226,6 +226,7 @@ function getTotalReviewCount(book) {
 console.log(getTotalReviewCount(book));
 */
 
+/*
 // MAP
 function getTotalReviewCount(book) {
   const goodreads = book.reviews?.goodreads?.reviewsCount;
@@ -277,7 +278,7 @@ a;
 const sortedByPages = books.slice().sort((a, b) => b.pages - a.pages);
 sortedByPages;
 
-// Immutible arrays
+// Immutable arrays
 //  1) Add a book object to array
 const newBook = {
   id: 6,
@@ -296,3 +297,12 @@ const booksAfterUpdate = booksAfterDelete.map((book) =>
   book.id === 1 ? { ...book, pages: 1 } : book
 );
 booksAfterUpdate;
+
+*/
+
+// Asynchronous JS Promises
+fetch("https://jsonplaceholder.typicode.com/todos")
+  .then((res) => res.json())
+  .then((data) => console.log(data));
+
+console.log("jonas");
